@@ -8,7 +8,6 @@ import "./styles.css"
 
 const Login = ({ setAuth }) => {
 
-    const googleid = process.env.GOOGLE_CLIENT_ID;
     
     const [inputs, setInputs] = useState({
         email: "",
@@ -94,7 +93,7 @@ const Login = ({ setAuth }) => {
             <Link to="/register" className="linkreg" style={{ textDecoration: 'none' }}>Register</Link>
             </button>
             <GoogleLogin
-            clientId={googleid}
+            clientId="274236062060-1vk0mne3n6li5bgj5lu4sruoa2agrp2l.apps.googleusercontent.com"
             buttonText="Login"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
