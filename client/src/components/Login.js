@@ -27,6 +27,8 @@ const Login = ({ setAuth }) => {
 
         try {
             const body = { email, password };
+
+            console.log(body)
             
             const response = await fetch("/auth/login", {
                 method: "POST",
