@@ -1,4 +1,4 @@
-import React, {Fragment, useState, useEffect} from 'react'; 
+import React, {Fragment, useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import GoogleLogin from 'react-google-login';
@@ -27,7 +27,7 @@ const Login = ({ setAuth }) => {
         try {
             const body = { email, password };
             
-            const response = await fetch("http://localhost:5000/auth/login", {
+            const response = await fetch("/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)

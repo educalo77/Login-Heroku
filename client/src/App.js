@@ -11,7 +11,6 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import GoogleLogin from 'react-google-login';
 
 toast.configure();
 
@@ -26,7 +25,7 @@ function App() {
   async function isAuth(){
   try {
     
-    const response = await fetch("http://localhost:5000/auth/is-verify", {
+    const response = await fetch("/auth/is-verify", {
       method: "GET",
       headers: { token: localStorage.token }
     });
