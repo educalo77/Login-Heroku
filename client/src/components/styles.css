@@ -1,0 +1,82 @@
+
+.all {
+
+    top: 0%;
+    left: 0%;
+    width: 100 vh;
+    height: 100vh;
+
+
+}
+.text {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+
+    
+}
+.h1img {
+    position: relative;
+    display: flex;
+    top: 5%;
+    background-color: aqua;
+    align-items: center;
+
+}
+.imageProfile {
+    border-radius: 50%;
+
+}
+.botlogout{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 10%;
+}
+.googlelogin {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.botreg{
+    font-family: Roboto-Medium;
+    border: none;
+    width: 100px;
+    height: 43px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    border-radius: 5%;
+    background-color: white;
+    opacity: 1;
+    text-decoration: none;
+    cursor:pointer;
+    color: grey;
+
+}
+.botreg:hover {
+    opacity: 0.9;
+    color: grey;
+}
+.linkreg{
+    font-family: Roboto-Medium;
+    color: grey;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+.botsubmit {
+    font-family: Roboto-Medium;
+    color: grey;
+    border: none;
+    width: 100%;
+    height: 43px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    border-radius: 5%;
+    background-color: white;
+    opacity: 1;
+    text-decoration: none;
+
+}
