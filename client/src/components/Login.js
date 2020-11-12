@@ -37,6 +37,7 @@ const Login = ({ setAuth }) => {
             const parseRes = await response.json();
 
             if (parseRes.token) {
+                console.log('entra')
                 localStorage.setItem("token", parseRes.token);
                 setAuth(true);
                 toast.success("Login successfully!")
