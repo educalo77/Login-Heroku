@@ -14,8 +14,8 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "client/build")))
 }
 
-console.log(__dirname);
-console.log(path.join(__dirname, "client/build"));
+// console.log(__dirname);
+// console.log(path.join(__dirname, "client/build"));
 
 // ROUTES
 
