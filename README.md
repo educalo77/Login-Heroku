@@ -1,4 +1,4 @@
 # Login-Heroku
 
-See results on (https://git.heroku.com/login-register-deploy.git) 
+See results on (https://login-register-deploy.herokuapp.com/dashboard) 
 Heroku Deploy
