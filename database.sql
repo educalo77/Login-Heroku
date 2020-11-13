@@ -1,4 +1,4 @@
-CREATE DATABASE JWTAUTH;
+CREATE DATABASE jwtauth;
 
 -- set extentions
 

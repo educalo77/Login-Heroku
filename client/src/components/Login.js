@@ -27,9 +27,7 @@ const Login = ({ setAuth }) => {
 
         try {
             const body = { email, password };
-
-            console.log(body)
-            
+ 
             const response = await fetch("/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -38,10 +36,8 @@ const Login = ({ setAuth }) => {
                         
             const parseRes = await response.json();
 
-            console.log(parseRes)
 
             if (parseRes.token) {
-                console.log('entra')
                 localStorage.setItem("token", parseRes.token);
                 setAuth(true);
                 toast.success("Login successfully!")

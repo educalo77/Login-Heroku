@@ -72,6 +72,8 @@ router.post("/login", validInfo, async (req, res) => {
         // give them the token
 
         const token = jwtGenerator(user.rows[0].user_id);
+        console.log(token)
+
         res.json({
             token
         });
